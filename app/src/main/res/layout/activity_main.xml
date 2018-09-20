@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#27B1FF"
+    tools:context="com.peacryapps.ryanpeacock.paycheckcalculator.MainActivity"
+    android:weightSum="1"><![CDATA[
+    android:baselineAligned="false">
+
+
+
+
+
+
+    ]]>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        app:srcCompat="@drawable/toppay01"
+        android:layout_weight="0.23" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How many hours did you work?"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How long are your unpaid breaks"
+        android:textColor="@android:color/black" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <RadioButton
+            android:id="@+id/thirty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="30 min"
+            android:textColor="@android:color/black"
+            app:buttonTint="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1 hr"
+            android:textColor="@android:color/black"
+            app:buttonTint="@android:color/white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How many unpaid breaks?"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/breaks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is your pay rate?"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/payrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:text="calculate" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
